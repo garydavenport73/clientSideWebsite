@@ -1,0 +1,248 @@
+/* RESET
+--------------------- */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* General Styling
+--------------------- */
+
+
+/* NAV STYLING */
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orangered;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0px 5px;
+    /*padding: 5px;
+    border-radius: 5px; */
+}
+
+nav ul li a {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* NAV STYLING END */
+
+
+/* link styling
+--------------------- */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+
+/*image styling
+----------------------- */
+
+#imageGallery img {
+    max-width: 250px;
+    border: solid 5px grey;
+    border-radius: 5px;
+}
+
+figure {
+    display: inline-block;
+}
+
+
+/* Header styling
+----------------------- */
+
+header {
+    text-align: center;
+    background-color: orange;
+}
+
+header h1 {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+
+/* .star-review-input styling */
+
+.star-review-input-container *:hover,
+.star-review-input-container:hover {
+    background-color: rgba(255, 166, 0, 0.5);
+    border-radius: 10px;
+}
+
+.star-review-input-container,
+.star-review-input span {
+    display: inline-block;
+    font-size: 2rem;
+    color: orange;
+}
+
+.stars {
+    font-size: 2rem;
+    color: orange;
+}
+
+
+/* table styles here
+--------------------- */
+
+table {
+    color: white;
+    background-color: white;
+    border: solid 5px grey;
+}
+
+table td {
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #1ad1ac;
+}
+
+table tr:nth-child(odd) {
+    background-color: #1abc9c;
+}
+
+table tr:hover {
+    background-color: darkolivegreen;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #157965;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+}
+
+.form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    background-color: rgb(226, 230, 163);
+}
+
+.form>input,
+.form>button {
+    height: 40px;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(154, 165, 149);
+}
+
+
+/* .form input {
+    background-color: yellow;
+} */
+
+.form input[type='checkbox'] {
+    margin-left: 10px;
+}
+
+.form>h2,
+span {
+    text-align: center;
+}
+
+input:valid {
+    background-color: rgb(230, 255, 230)
+}
+
+input:invalid {
+    background-color: rgb(255, 230, 230);
+}
+
+
+/* responsive rules here
+--------------------- */
+
+@media screen and (max-width: 425px) {
+    /* * {
+        transition: ease all .2s;
+    } */
+    /* NAV STYLING */
+    nav>ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        list-style-type: none;
+        margin: 1px 10px;
+    }
+    nav ul li a {
+        padding: 2px;
+        border-radius: 5px;
+    }
+    /* NAV STYLING END */
+    /* HEADER STYLING */
+    header h1 {
+        padding: 5px;
+        font-size: 1rem;
+    }
+    /* HEADER END */
+}

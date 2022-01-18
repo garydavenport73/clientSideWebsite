@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>WebSite</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li id='main-hamburger-menu' class="nestburger initial-open">&#9776</li>
+            <li><a id='home' onclick='showMain(this.id)'>Home</a></li>
+            <li><a id='news' onclick='showMain(this.id)'>News</a></li>
+            <li><a id='contact' onclick='showMain(this.id)'>Contact</a></li>
+            <li><a id='about' onclick='showMain(this.id)'>About</a></li>
+            <li><a id='profile' onclick='showMain(this.id)'>Profile</a></li>
+            <li><a id='login' , onclick='showMain(this.id)'>Log-In</a></li>
+            <li><a id='test' , onclick='showMain(this.id)'>Test</a></li>
+        </ul>
+
+    </nav>
+    <!-- Navigation Bar End -->
+    <main id='main-home'>
+        <h2>Home:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt inventore repellat. Doloribus, fugiat? Nobis officiis dolore, cum cupiditate ex eos vitae temporibus, maiores distinctio magni voluptatibus? Molestiae, obcaecati.</p>
+    </main>
+    <main id='main-news'>
+        <h2>News:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt inventore repellat. Doloribus, fugiat? Nobis officiis dolore, cum cupiditate ex eos vitae temporibus, maiores distinctio magni voluptatibus? Molestiae, obcaecati.</p>
+    </main>
+    <main id='main-contact'>
+        <h2>Contact:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur quam laudantium aut repudiandae in hic fugit officiis veniam adipisci nam nulla,
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt inventore repellat. Doloribus, fugiat? Nobis officiis dolore, cum cupiditate ex eos vitae temporibus, maiores distinctio magni voluptatibus? Molestiae, obcaecati.</p>
+    </main>
+    <main id='main-about'>
+        <h2>About:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt inventore repellat. Doloribus, fugiat? Nobis officiis dolore, cum cupiditate ex eos vitae temporibus, maiores distinctio magni voluptatibus? Molestiae, obcaecati.</p>
+    </main>
+    <main id='main-profile'>
+        <form class='form' method="POST" action="">
+            <h2>Profile:</h2>
+            <span>Edit your information.</span>
+            <input type="text" name="profile-firstname" id="profile-firstname" placeholder="First Name*" required="">
+            <input type="text" name="profile-lastname" id="profile-lastname" placeholder="Last Name">
+            <input type="text" name="profile-username" id="profile-username" placeholder="User Name*" required="">
+            <input type="email" name="profile-email" id="profile-email" placeholder="Email*" required="">
+            <div><input type="checkbox" name="profile-subscribe" id="profile-subscribe"><label for="profile-subscribe">Subscribe to the newsletter.</label></div>
+
+            <input type="password" name="profile-password0" id="profile-password0" placeholder="Current Password*" required="">
+            <div><input type="checkbox" name="change-password" id="change-password" onlick="togglePasswordChange()"><label for="change-password">Change My Password</label></div>
+
+
+            <input type="password" name="profile-password1" id="profile-password1" placeholder="New Password*" pattern=".{8,}" title="Must be at least 8 or more characters" style="display:none;">
+            <input type="password" name="profile-password2" id="profile-password2" placeholder="Repeat Password*" pattern=".{8,}" title="Must be at least 8 or more characters" style="display:none;">
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+    <main id='main-login'>
+
+        <form class='form' method="POST" action="">
+            <h2>Login:</h2>
+            <input type="email" name="email" id="login-email" ,="" placeholder="Email" required="">
+            <input type="password" name="login-password" id="login-password" ,="" placeholder="Password" required="">
+            <button type="submit">Log In</button></div>
+            <span><a id='forgot-password' onclick='showMain(this.id)'>Forgot Password?</a></span>
+        </form>
+        <div class='form'>
+            <span><h3>Click Here to Register</h3></span>
+            <button id='register' onclick='showMain(this.id)'>Register</button>
+        </div>
+    </main>
+
+    <main id='main-forgot-password'>
+        <h2>Forgot Password:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt inventore repellat. Doloribus, fugiat? Nobis officiis dolore, cum cupiditate ex eos vitae temporibus, maiores distinctio magni voluptatibus? Molestiae, obcaecati.</p>
+    </main>
+
+    <main id='main-register'>
+
+        <form class='form' method="POST" action="">
+            <h2>Register:</h2>
+            <input type="text" name="register-firstname" id="register-firstname" placeholder="First Name*" required=""></div>
+            <input type="text" name="register-lastname" id="register-lastname" placeholder="Last Name"></div>
+            <input type="text" name="register-username" id="register-username" placeholder="User Name*" required=""></div>
+            <input type="password" name="register-password1" id="register-password1" placeholder="Password*" pattern=".{8,}" title="Must be at least 8 or more characters" required=""></div>
+            <input type="password" name="register-password2" id="register-password2" placeholder="Repeat Password*" pattern=".{8,}" title="Must be at least 8 or more characters" required=""></div>
+            <input type="email" name="register-email" id="register-email" placeholder="Email*" required=""></div>
+            <div><input type="checkbox" name="register-subscribe" id="register-subscribe" checked="">
+                <label for="register-subscribe">Subscribe to the newsletter.</label>
+            </div>
+            <button type="submit">Register</button>
+            <span>*required</span>
+        </form>
+    </main>
+    <main id='main-test'>
+
+        <form class='form' method="POST" action="">
+            <h2>Test:</h2>
+            <input type="text" name="test-firstname" id="test-firstname" placeholder="First Name*" required="">
+            <input type="text" name="test-lastname" id="test-lastname" placeholder="Last Name">
+            <input type="text" name="test-username" id="test-username" placeholder="User Name*" required="">
+            <input type="password" name="test-password1" id="test-password1" placeholder="Password*" pattern=".{8,}" title="Must be at least 8 or more characters" required="">
+            <input type="password" name="test-password2" id="test-password2" placeholder="Repeat Password*" pattern=".{8,}" title="Must be at least 8 or more characters" required="">
+            <input type="email" name="test-email" id="test-email" placeholder="Email*" required="">
+            <div>
+                <input type="checkbox" name="test-subscribe" id="test-subscribe" checked="">
+                <label for="test-subscribe">Subscribe to the newsletter.</label>
+            </div>
+            <button type="submit">test</button><span>*required</span>
+        </form>
+    </main>
+
+    <footer>MyWebPage &copy;2022</footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
