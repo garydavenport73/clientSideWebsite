@@ -24,7 +24,7 @@
             <li><a id='about' onclick='showMain(this.id)'>About</a></li>
             <li><a id='profile' onclick='showMain(this.id)'>Profile</a></li>
             <li><a id='login' , onclick='showMain(this.id)'>Log-In</a></li>
-            <li><a id='test' , onclick='showMain(this.id)'>Test</a></li>
+            <!-- <li><a id='test' , onclick='showMain(this.id)'>Test</a></li> -->
         </ul>
 
     </nav>
@@ -66,7 +66,6 @@
         </form>
     </main>
     <main id='main-login'>
-
         <form class='form' method="POST" action="">
             <h2>Login:</h2>
             <input type="email" name="email" id="login-email" ,="" placeholder="Email" required="">
@@ -81,12 +80,14 @@
     </main>
 
     <main id='main-forgot-password'>
-        <h2>Forgot Password:</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt inventore repellat. Doloribus, fugiat? Nobis officiis dolore, cum cupiditate ex eos vitae temporibus, maiores distinctio magni voluptatibus? Molestiae, obcaecati.</p>
+        <form class='form' method="POST" action="">
+            <h2>Forgot Password:</h2>
+            <input type="email" name="forgot-password-email" id="forgot-password-email" placeholder="Email*" required="">
+            <button type="submit">Send</button><span>*required</span>
+        </form>
     </main>
 
     <main id='main-register'>
-
         <form class='form' method="POST" action="">
             <h2>Register:</h2>
             <input type="text" name="register-firstname" id="register-firstname" placeholder="First Name*" required=""></div>
@@ -103,7 +104,6 @@
         </form>
     </main>
     <main id='main-test'>
-
         <form class='form' method="POST" action="">
             <h2>Test:</h2>
             <input type="text" name="test-firstname" id="test-firstname" placeholder="First Name*" required="">
@@ -119,6 +119,7 @@
             <button type="submit">test</button><span>*required</span>
         </form>
     </main>
+
 
     <footer>MyWebPage &copy;2022</footer>
     <script src="javascript.js"></script>
